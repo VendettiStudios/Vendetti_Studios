@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .logo {
+    height: 75px;
+    width: 75px;
+    @apply fixed;
+  }
+}
