@@ -18,9 +18,8 @@ const Nav = (props: Props) => {
                         </Image>
                     </Link>
                     <div className="flex relative top-14 w-full">
-                        <div className="flex relative top-14 w-full">
-                            <h1 className="absolute text-3xl font-extrabold left-32">Vendetti Studios</h1>
-                        </div>
+                        <h1 className="absolute text-3xl font-extrabold left-32">Vendetti Studios</h1>
+
                         <div className="navMenu absolute right-10 mx-auto">
                             <Link className="p-3"
                                 href="/About">
