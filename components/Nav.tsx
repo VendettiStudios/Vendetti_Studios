@@ -17,6 +17,9 @@ const Nav = (props: Props) => {
                             alt="logo">
                         </Image>
                     </Link>
+                    <div className="flex relative top-14 w-full">
+                    <h1 className="absolute text-3xl font-extrabold left-32">Vendetti Studios</h1>
+                    </div>
                 </nav>
             </header>
         </div>
