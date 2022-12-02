@@ -6,6 +6,6 @@
   .logo {
     height: 75px;
     width: 75px;
-    @apply fixed;
+    @apply fixed top-8 left-8;
   }
 }

@@ -9,13 +9,15 @@ const Nav = (props: Props) => {
     return (
         <div>
             <header>
-                <Link href="/">
-                    <Image
-                        className="logo top-8 left-8"
-                        src={Logo}
-                        alt="logo">
-                    </Image>
-                </Link>
+                <nav>
+                    <Link href="/">
+                        <Image
+                            className="logo top-8 left-8"
+                            src={Logo}
+                            alt="logo">
+                        </Image>
+                    </Link>
+                </nav>
             </header>
         </div>
     )
