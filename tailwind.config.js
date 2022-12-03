@@ -5,7 +5,12 @@ module.exports = {
         "./components/**/*.{js,ts,jsx,tsx}",
       ],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily:{
+            Tiro:["Tiro Tamil, serif"],
+            Hina:["Hina Mincho, serif"]
+        },
+    },
   },
   plugins: [],
 }

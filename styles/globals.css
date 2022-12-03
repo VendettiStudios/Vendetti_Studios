@@ -1,16 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Tiro+Tamil&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* Nav */
 @layer components {
   .logo {
     height: 75px;
     width: 75px;
     @apply fixed top-8 left-8;
   }
+  .nav {
+    @apply flex relative top-12 w-full;
+  }
+  .title {
+    @apply absolute text-3xl font-extrabold left-32 font-Hina;
+  }
+  .navMenu {
+    @apply absolute right-10 mx-auto top-2;
+  }
   @media (max-width: 767px) {
     .navMenu {
-        display: none;
+      display: none;
     }
+  }
 }
+/* Mobile Nav */
+@layer components {
+  .headerMobile {
+    @apply md:hidden;
+  }
+  .hamburger {
+    @apply z-50 fixed right-5 top-12;
+  }
+  .panel {
+    @apply z-40 bg-[rgb(36,36,36)] w-full h-screen fixed top-0;
+  }
+  .navList {
+    @apply grid grid-cols-1;
+  }
 }
