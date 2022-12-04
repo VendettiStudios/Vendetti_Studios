@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Tiro+Tamil&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Montserrat&family=Tiro+Tamil&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -18,7 +18,7 @@
     @apply absolute text-3xl font-extrabold left-32 font-Hina;
   }
   .navMenu {
-    @apply absolute right-10 mx-auto top-2;
+    @apply absolute right-10 mx-auto top-2 font-Mont text-xl;
   }
   @media (max-width: 767px) {
     .navMenu {

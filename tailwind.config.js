@@ -8,7 +8,8 @@ module.exports = {
     extend: {
         fontFamily:{
             Tiro:["Tiro Tamil, serif"],
-            Hina:["Hina Mincho, serif"]
+            Hina:["Hina Mincho, serif"],
+            Mont:["Montserrat, sans-serif"]
         },
     },
   },
