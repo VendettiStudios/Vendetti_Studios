@@ -1,4 +1,4 @@
-import React from 'react'
+import * as React from 'react'
 import Image from 'next/image';
 import Logo from '../public/logo.png';
 import Link from 'next/link';
@@ -22,6 +22,10 @@ const Nav = (props: Props) => {
                     <div className="nav">
                         <h1 className="title">Vendetti Studios</h1>
                         <div className="navMenu">
+                            <Link className="pr-2"
+                            href="/Services">
+                                Services
+                            </Link>
                             <Link className="p-3"
                                 href="/About">
                                 About
@@ -49,6 +53,10 @@ const Nav = (props: Props) => {
                     </Disclosure.Button>
                     <Disclosure.Panel className="panel">
                         <div className="navList">
+                        <Link className=""
+                            href="/Services">
+                                Services
+                            </Link>
                             <Link className=""
                                 href="/About">
                                 About

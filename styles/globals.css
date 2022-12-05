@@ -9,10 +9,10 @@
   .logo {
     height: 75px;
     width: 75px;
-    @apply fixed top-8 left-8;
+    @apply fixed top-8 left-8 z-10;
   }
   .nav {
-    @apply flex relative top-12 w-full;
+    @apply flex relative top-12 w-full z-10;
   }
   .title {
     @apply absolute text-3xl font-extrabold left-32 font-Hina;
@@ -40,4 +40,15 @@
   .navList {
     @apply grid grid-cols-1;
   }
+}
+/* Hero */
+@layer components {
+.hero{
+    background:url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/42cba75e-8116-44b6-2d70-3899ccaa5900/public);
+    background-size:cover;
+    @apply h-screen overflow-hidden -z-40
+}
+.heroHead{
+    @apply relative flex items-center justify-center h-screen mb-12 overflow-hidden
+}
 }

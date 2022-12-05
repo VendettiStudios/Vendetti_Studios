@@ -1,4 +1,5 @@
-import React from 'react'
+import * as React from 'react'
+
 import { Cursor, useTypewriter } from "react-simple-typewriter"
 
 type Props = {}
@@ -6,6 +7,8 @@ type Props = {}
 function Hero({ }: Props) {
     const [text] = useTypewriter({
         words: [
+            "Consult.",
+            "Innovate.",
             "Design.",
             "Develop.",
             "Deploy."
@@ -13,9 +16,11 @@ function Hero({ }: Props) {
         loop: true,
         delaySpeed: 2500,
     })
+    
     return (
-        <div className="hero h-screen overflow-hidden">
-            <header className="relative flex items-center justify-center h-screen mb-12 overflow-hidden">
+        <div className="hero">
+            <header className="heroHead">
+                <div className=""></div>
                 <div>
                     <div className="typeWriter text-2xl absolute">
                         {text}
