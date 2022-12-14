@@ -22,13 +22,13 @@ const Nav = (props: Props) => {
                     <div className="nav">
                         <h1 className="title">Vendetti Studios</h1>
                         <div className="navMenu">
+                            <Link className="p-3"
+                                href="/About">
+                                About Us
+                            </Link>
                             <Link className="pr-2"
                             href="/Services">
                                 Services
-                            </Link>
-                            <Link className="p-3"
-                                href="/About">
-                                About
                             </Link>
                             <Link className="pr-3"
                                 href="/Work">
@@ -37,6 +37,10 @@ const Nav = (props: Props) => {
                             <Link className="pr-3"
                                 href="/OurTeam">
                                 Our Team
+                            </Link>
+                            <Link className="pr-3"
+                                href="/Blog">
+                                Blog
                             </Link>
                             <Link href="/Contact">
                                 Contact
@@ -53,13 +57,13 @@ const Nav = (props: Props) => {
                     </Disclosure.Button>
                     <Disclosure.Panel className="panel">
                         <div className="navList">
+                            <Link className=""
+                                href="/About">
+                                About Us
+                            </Link>
                         <Link className=""
                             href="/Services">
                                 Services
-                            </Link>
-                            <Link className=""
-                                href="/About">
-                                About
                             </Link>
                             <Link className=""
                                 href="/Work">
@@ -68,6 +72,10 @@ const Nav = (props: Props) => {
                             <Link className=""
                                 href="/OurTeam">
                                 Our Team
+                            </Link>
+                            <Link className=""
+                                href="/Blog">
+                                Blog
                             </Link>
                             <Link href="/Contact">
                                 Contact
