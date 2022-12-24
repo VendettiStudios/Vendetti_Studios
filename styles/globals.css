@@ -1,33 +1,113 @@
-@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Montserrat&family=Tiro+Tamil&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Montserrat&family=Tiro+Tamil&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Nav */
+
+
+/* body{
+    background-color: darkblue;
+} */
+
+
+/* Mobile-Nav */
 @layer components {
+  nav {
+    display: flex;
+    align-items: center;
+    height: 75px;
+    flex-flow: row nowrap;
+    justify-content:center;
+    @apply w-full;
+  }
   .logo {
+    position:absolute;
+    margin-top:10px;
+    top:0;
+    left:0;
+    width: 60px;
+    margin-left: 10px;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+  }
+  .title {
+    display:flex;
+    position:relative;
+    align-items: center;
+    justify-content:center;
+    flex-flow:column nowrap;
+    align-items:center;
+    @apply text-3xl font-extrabold font-Hina;
+  }
+  .hamburger {
+    position:absolute;
+    right:0;
+    @apply z-50;
+  }
+  .panel {
+    display:flex;
+    left:0;
+    position:absolute;
+    align-items: center;
+    justify-content:center;
+    @apply bg-[rgb(36,36,36)] w-full h-screen fixed top-0;
+  }
+  .navList {
+    display:flex;
+    flex-flow:column nowrap;
+    @apply text-white;
+  }
+
+
+  /* Desktop-Nav */
+  @media (min-width: 600px) {
+  }
+}
+
+/* Nav
+@layer components {
+  nav {
+    display:flex;
+    align-items:center;
+    height: 40px;
+    @apply bg-amber-500;
+  }
+  .logo {
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 10px;
     height: 75px;
     width: 75px;
-    @apply fixed top-8 left-8 z-10;
+    @apply fixed;
   }
-  .nav {
-    @apply flex relative top-12 w-full z-10;
+  .logo-absolute { */
+/* top: 0;
+    left: 0; */
+/* margin-top: 10px;
+    margin-left: 10px; */
+/* height: 65px;
+    width: 65px;
+    @apply absolute;
   }
   .title {
     @apply absolute text-3xl font-extrabold left-32 font-Hina;
   }
   .navMenu {
-    @apply absolute right-10 mx-auto top-2 font-Mont text-xl;
+    @apply absolute right-10 mx-auto font-Mont text-xl;
   }
   @media (max-width: 767px) {
     .navMenu {
       display: none;
     }
   }
-}
+} */
+
 /* Mobile Nav */
-@layer components {
+/* @layer components {
   .headerMobile {
     @apply md:hidden;
   }
@@ -40,15 +120,16 @@
   .navList {
     @apply grid grid-cols-1;
   }
-}
+} */
+
 /* Hero */
-@layer components {
-.hero{
-    background:url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/42cba75e-8116-44b6-2d70-3899ccaa5900/public);
-    background-size:cover;
-    @apply h-screen overflow-hidden -z-40
-}
-.heroHead{
-    @apply relative flex items-center justify-center h-screen mb-12 overflow-hidden
-}
-}
+/* @layer components {
+  .hero { */
+/* background:url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/42cba75e-8116-44b6-2d70-3899ccaa5900/public); */
+/* background-size:cover; */
+/* @apply overflow-hidden bg-gray-500;
+  }
+  .heroHead {
+    @apply relative flex items-center justify-center h-screen mb-12 overflow-hidden;
+  }
+} */

@@ -9,7 +9,8 @@ module.exports = {
         fontFamily:{
             Tiro:["Tiro Tamil, serif"],
             Hina:["Hina Mincho, serif"],
-            Mont:["Montserrat, sans-serif"]
+            Mont:["Montserrat, sans-serif"],
+            Ita:["Italiana, serif"]
         },
     },
   },

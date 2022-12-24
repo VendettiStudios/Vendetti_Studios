@@ -19,19 +19,19 @@ function Hero({ }: Props) {
     
     return (
         <div className="hero">
-            <header className="heroHead">
+            {/* <header className="heroHead">
                 <div className=""></div>
                 <div>
                     <div className="typeWriter text-2xl absolute">
                         {text}
-                        {/* <Cursor cursorColor="F7AB0A" /> */}
+                        <Cursor cursorColor="F7AB0A" />
                     </div>
                     <h1 className="text-2xl pt-7">
                         With Vendetti Studios.
                     </h1>
                     <p className="flex justify-center">Software Solutions for clients globally.</p>
                 </div>
-            </header>
+            </header>  */}
         </div>
     )
 }
