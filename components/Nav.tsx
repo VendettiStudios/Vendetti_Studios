@@ -8,72 +8,71 @@ import { Spiral as Hamburger } from 'hamburger-react'
 
 type Props = {}
 
-
-const Nav = (props: Props) => {
-    return (
-        <div>
-            <header>
-                <nav className="">
-                    <Link href="/">
-                        {/* <Image
+class Nav extends React.Component {
+    render() {
+        return (
+            <div>
+                <header>
+                    <nav className="">
+                        <Link href="/">
+                            {/* <Image
                             className="logo-absolute"
                             src={Logo}
                             alt="logo">
                         </Image> */}
-                        <Image
-                            className="logo"
-                            src={VS}
-                            alt="logo">
-                        </Image>
-                    </Link>
-                    <div className="title">
+                            <Image
+                                className="logo"
+                                src={VS}
+                                alt="logo">
+                            </Image>
+                        </Link>
+                        <div className="title">
                             <h1>Vendetti</h1>
                             <h1>Studios</h1>
                         </div>
-                    <div className="headerMobile">
-                        <Disclosure as="nav">
-                            <Disclosure.Button className="hamburger peer group">
-                                <Hamburger size={20} />
-                            </Disclosure.Button>
-                            <Disclosure.Panel className="panel">
-                                <div className="navList">
-                                    <Link className=""
-                                        href="/About">
-                                        About Us
-                                    </Link>
-                                    <Link className=""
-                                        href="/Services">
-                                        Services
-                                    </Link>
-                                    <Link className=""
-                                        href="/Work">
-                                        Work
-                                    </Link>
+                        <div className="headerMobile">
+                            <Disclosure as="nav"  >
+                                <Disclosure.Button className="hamburger peer group">
+                                    <Hamburger size={20} />
+                                </Disclosure.Button>
+                                <Disclosure.Panel className="panel">
+                                    <div className="navList">
+                                        <Link className=""
+                                            href="/About">
+                                            About Us
+                                        </Link>
+                                        <Link className=""
+                                            href="/Services">
+                                            Services
+                                        </Link>
+                                        <Link className=""
+                                            href="/Work">
+                                            Work
+                                        </Link>
 
-                                    <Link className=""
-                                        href="/OurTeam">
-                                        Our Team
-                                    </Link>
-                                    <Link className=""
-                                        href="/Blog">
-                                        Blog
-                                    </Link>
-                                    <Link href="/Contact">
-                                        Contact
-                                    </Link>
-                                </div>
-                            </Disclosure.Panel>
-                        </Disclosure>
-                    </div>
-                    {/* <div className="nav"> */}
-
-                    {/* <div className="navMenu">
+                                        <Link className=""
+                                            href="/OurTeam">
+                                            Our Team
+                                        </Link>
+                                        <Link className=""
+                                            href="/Blog">
+                                            Blog
+                                        </Link>
+                                        <Link href="/Contact">
+                                            Contact
+                                        </Link>
+                                    </div>
+                                </Disclosure.Panel>
+                            </Disclosure>
+                        </div>
+                        {/* Desktop */}
+                        <div className="navMenu">
                             <Link className="p-3"
                                 href="/About">
                                 About Us
                             </Link>
                             <Link className="pr-2"
-                            href="/Services">
+                                href="/Services">
                                 Services
                             </Link>
                             <Link className="pr-3"
@@ -84,7 +83,6 @@ const Nav = (props: Props) => {
                                 href="/Work">
                                 Work
                             </Link>
-                            
                             <Link className="pr-3"
                                 href="/OurTeam">
                                 Our Team
@@ -97,14 +95,12 @@ const Nav = (props: Props) => {
                                 Contact
                             </Link>
                         </div>
-                    </div> */}
 
-                    {/* Mobile Nav */}
-
-                </nav>
-            </header>
-        </div>
-    )
+                    </nav>
+                </header>
+            </div>
+        );
+    }
 }
 
 export default Nav

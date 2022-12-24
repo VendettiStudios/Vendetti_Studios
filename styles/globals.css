@@ -19,6 +19,7 @@
     display: flex;
     align-items: center;
     height: 75px;
+    /* background-color:greenyellow; */
     flex-flow: row nowrap;
     justify-content:center;
     @apply w-full;
@@ -60,11 +61,23 @@
     flex-flow:column nowrap;
     @apply text-white;
   }
-
+  .navMenu {
+    display:none;
+  }
 
   /* Desktop-Nav */
   @media (min-width: 600px) {
+    .hamburger{
+        display:none;
+    }
+  
+  .navMenu{
+    position:absolute;
+    right:0;
+    margin-right:10px;
+    display:block;
   }
+    }
 }
 
 /* Nav
